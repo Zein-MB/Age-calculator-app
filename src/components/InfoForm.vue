@@ -173,12 +173,12 @@ export default {
       </abbr>
     </div>
     <div class="submit">
-      <button class="submit-btn" type="submit" @click="checkErrors" role="button">
+      <button class="submit-btn" type="submit" @click="checkErrors" aria-label="submit">
         <img src="../assets/images/icon-arrow.svg" alt="" />
       </button>
     </div>
   </form>
-  <div class="result" role="text">
+  <div class="result">
     <p><span>{{ this.newYears }}</span> <b>years</b></p>
     <p><span>{{ this.newMonths }}</span> <b>months</b></p>
     <p><span>{{ this.newDays }}</span> <b>days</b></p>
