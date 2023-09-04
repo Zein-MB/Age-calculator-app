@@ -140,7 +140,7 @@ export default {
 </script>
 
 <template>
-  <form action="POST" @submit.prevent="checkValue">
+  <form action="POST" @submit.prevent="checkValue" role="heading">
     <div class="inputs">
       <div>
         <label for="Day" :class="days == '' || !matchDays ? 'empty-label' : ''">Day</label>
