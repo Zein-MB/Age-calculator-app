@@ -140,7 +140,8 @@ export default {
 </script>
 
 <template>
-  <form action="POST" @submit.prevent="checkValue" role="heading">
+  <h1>Age Calculator</h1>
+  <form action="POST" @submit.prevent="checkValue">
     <div class="inputs">
       <div>
         <label for="Day" :class="days == '' || !matchDays ? 'empty-label' : ''">Day</label>
