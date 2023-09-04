@@ -1,0 +1,161 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  padding: 50px;
+  border-radius: 20px;
+  border-bottom-right-radius: 15em;
+  width: 48em;
+}
+main form .inputs {
+  display: flex;
+  position: relative;
+}
+main form .inputs div:not(main form .inputs div:first-child) {
+  margin-left: 30px;
+}
+main form .inputs div label {
+  color: rgba(113, 111, 111, 0.6784313725);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main form .inputs div label.empty-label {
+  color: hsl(0, 100%, 67%);
+}
+main form .inputs div input {
+  display: block;
+  margin-top: 10px;
+  width: 4em;
+  padding: 15px;
+  font-size: 32px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8px;
+  caret-color: hsl(259, 100%, 65%);
+  transition: 0.2s;
+}
+main form .inputs div input.empty {
+  border-color: hsl(0, 100%, 67%);
+}
+main form .inputs div input::-moz-placeholder {
+  color: rgba(113, 111, 111, 0.7294117647);
+  -moz-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+main form .inputs div input::placeholder {
+  color: rgba(113, 111, 111, 0.7294117647);
+  transition: 0.2s ease;
+}
+main form .inputs div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+main form .inputs div input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+}
+main form .inputs div input:focus::-moz-placeholder {
+  opacity: 0;
+}
+main form .inputs div input:focus::placeholder {
+  opacity: 0;
+}
+main form .inputs div .empty-error, main form .inputs div .invalid-error {
+  padding-top: 10px;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 13px;
+}
+main form .inputs .reset-btn {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  background-color: hsl(259, 100%, 65%);
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main form .inputs .reset-btn img {
+  max-width: 100%;
+  width: 30px;
+  height: 30px;
+}
+main form .inputs .reset-btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+main form .submit {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main form .submit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.5px;
+  background-color: hsl(0, 0%, 86%);
+}
+main form .submit .submit-btn {
+  background-color: hsl(259, 100%, 65%);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 1;
+  border: none;
+}
+main form .submit .submit-btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+main .result {
+  padding-block: 10px;
+}
+main .result p {
+  margin-block: -30px;
+  display: block;
+}
+main .result p > * {
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+}
+main .result p > span {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 10px;
+}/*# sourceMappingURL=main.css.map */
