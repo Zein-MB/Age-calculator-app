@@ -173,7 +173,7 @@ export default {
       </abbr>
     </div>
     <div class="submit">
-      <button class="submit-btn" type="submit" @click="checkErrors">
+      <button class="submit-btn" type="submit" @click="checkErrors" role="button">
         <img src="../assets/images/icon-arrow.svg" alt="" />
       </button>
     </div>
